@@ -1,5 +1,5 @@
 const words_file = Deno.readTextFileSync("Words.txt");
-const words = words_file.split("\n");
+const words = words_file.split(/\r?\n/);
 
 const config = new Map<string, number>();
 config.set("max words", 20);

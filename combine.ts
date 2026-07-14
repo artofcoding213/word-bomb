@@ -1,12 +1,5 @@
-let global_words: string[] = [
-    "dichlorodiphenyltrichloroethane",
-    "pseudopseudohypoparathyroidism",
-    "supercalifragilisticexpialidocious",
-    "supercalifragilistic",
-    "radioimmunoelectrophoresis",
-];
-
-const files = ["CollinsScrabble.txt","Enable1.txt","Letterpress.txt"];
+let global_words: string[] = [];
+const files = ["CollinsScrabble.txt","Enable1.txt","Letterpress.txt","UserWords.txt"];
 
 for (const file_name of files) {
     const words = Deno.readTextFileSync(file_name).split("\n");
